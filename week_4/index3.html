@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Power Tracker</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1> Masai Electricity Board</h1>
+    <div class="container">
+        <!-- <form action="#">
+        <p></p> -->
+        <div>
+            <label for="firstname" class="name">Name: </label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            Gender: <select id="gender">
+                <option value="--">--</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="email">email: </label>
+            <input type="text" id="email"></div>
+
+        <div>
+            <label for="mobile">Mobile: </label>
+            <input type="text" id="mobile">
+        </div>
+
+        <div>
+            <label for="equipment">Equipment: </label>
+            <input type="text" id="equip" placeholder="Equipment used">
+        </div>
+    </div>
+    <div class="cont">
+        <div>
+            <label for="equipment">Power usage: </label>
+            <input type=" " id="pwruse" placeholder="Equipment power usage">
+        </div>
+
+        <div>
+            <label for="usage">Usage per day: </label>
+            <input type=" " id="usgprday" placeholder="Usage per day ">
+        </div>
+        <div>
+            <label for="usage">Usage per month: </label>
+            <input type=" " id="usgprmon" placeholder="Usage per month">
+        </div>
+
+        <div>
+            <input type="submit" onclick="elec_bill()" value="Submit"> <input type="reset" onclick="reset()">
+        </div>
+    </div>
+    <!-- </form> -->
+
+    <div class="calculate">
+
+        <h3 id="pName"></h3>
+        <h3 id="pGender"></h3>
+        <h3 id="pEmail"></h3>
+        <h3 id="pMobile"></h3>
+        <h3 id="pEquip"></h3>
+        <h3 id="pbill"></h3>
+    </div>
+
+    <!-- <button onclick="showName()">Name</button>
+    <button onclick="showGender()">Gender</button>
+    <button onclick="showEmail()">Email</button>
+    <button onclick="showNumber()">Mobile</button>
+    <button onclick="elec_bill()">ElectricBill</button> -->
+
+    <script src="billing.js"></script>
+</body>
+
+</html>
